@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОтправитьОтвет" id="42">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтправитьОтвет</CommandName>
+				<ExtendedTooltip name="ФормаОтправитьОтветРасширеннаяПодсказка" id="43"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="СтраницаЗаявка" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница заявка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаЗаявкаРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапка" id="22">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="23"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаШапка1" id="24">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шапка1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШапка1РасширеннаяПодсказка" id="25"/>
+									<ChildItems>
+										<InputField name="Номер" id="1">
+											<DataPath>Объект.Number</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+										</InputField>
+										<InputField name="Дата" id="4">
+											<DataPath>Объект.Date</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаШапка2" id="26">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шапка2</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШапка2РасширеннаяПодсказка" id="27"/>
+									<ChildItems>
+										<InputField name="Инициатор" id="7">
+											<DataPath>Объект.Инициатор</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИнициаторКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="9"/>
+										</InputField>
+										<InputField name="Ответственный" id="10">
+											<DataPath>Объект.Ответственный</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОтветственныйКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="12"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Приоритет" id="78">
+							<DataPath>Объект.Приоритет</DataPath>
+							<ContextMenu name="ПриоритетКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="80"/>
+						</InputField>
+						<HTMLDocumentField name="ТелоЗаявки" id="16">
+							<DataPath>Объект.ТелоЗаявки</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ТелоЗаявкиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ТелоЗаявкиРасширеннаяПодсказка" id="18"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОтвет" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ пользователю</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ответ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОтветРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<Button name="ОтправитьОтвет" id="103">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтправитьОтвет</CommandName>
+							<ExtendedTooltip name="ОтправитьОтветРасширеннаяПодсказка" id="104"/>
+						</Button>
+						<TextDocumentField name="ОтветПользователю" id="34">
+							<DataPath>Объект.ОтветПользователю</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Shortcut>Ctrl+V</Shortcut>
+							<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+							<ContextMenu name="ОтветПользователюКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ОтветПользователюРасширеннаяПодсказка" id="36"/>
+						</TextDocumentField>
+						<InputField name="СтатусЗаявки" id="37">
+							<DataPath>Объект.СтатусЗаявки</DataPath>
+							<ContextMenu name="СтатусЗаявкиКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="СтатусЗаявкиРасширеннаяПодсказка" id="39"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПрикрепленныеФайлы" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прикрепленные файлы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница прикрепленные файлы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПрикрепленныеФайлыРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКнопкиПрикрепленныеФайлы" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки прикрепленные файлы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки прикрепленные файлы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопкиПрикрепленныеФайлыРасширеннаяПодсказка" id="108"/>
+							<ChildItems>
+								<Button name="ПрикрепитьФайл" id="40">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПрикрепитьФайл</CommandName>
+									<ExtendedTooltip name="ПрикрепитьФайлРасширеннаяПодсказка" id="41"/>
+								</Button>
+								<Button name="ОткрытьФайл" id="105">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьФайл</CommandName>
+									<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="106"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПрикрепленныеФайлы" id="81">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПрикрепленныеФайлы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПрикрепленныеФайлыКонтекстноеМеню" id="82"/>
+							<AutoCommandBar name="ПрикрепленныеФайлыКоманднаяПанель" id="83">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПрикрепленныеФайлыРасширеннаяПодсказка" id="84"/>
+							<SearchStringAddition name="ПрикрепленныеФайлыСтрокаПоиска" id="85">
+								<AdditionSource>
+									<Item>ПрикрепленныеФайлы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрикрепленныеФайлыСтрокаПоискаКонтекстноеМеню" id="86"/>
+								<ExtendedTooltip name="ПрикрепленныеФайлыСтрокаПоискаРасширеннаяПодсказка" id="87"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПрикрепленныеФайлыСостояниеПросмотра" id="88">
+								<AdditionSource>
+									<Item>ПрикрепленныеФайлы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрикрепленныеФайлыСостояниеПросмотраКонтекстноеМеню" id="89"/>
+								<ExtendedTooltip name="ПрикрепленныеФайлыСостояниеПросмотраРасширеннаяПодсказка" id="90"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПрикрепленныеФайлыУправлениеПоиском" id="91">
+								<AdditionSource>
+									<Item>ПрикрепленныеФайлы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрикрепленныеФайлыУправлениеПоискомКонтекстноеМеню" id="92"/>
+								<ExtendedTooltip name="ПрикрепленныеФайлыУправлениеПоискомРасширеннаяПодсказка" id="93"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПрикрепленныеФайлы1НомерСтроки" id="94">
+									<DataPath>Объект.ПрикрепленныеФайлы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрикрепленныеФайлы1НомерСтрокиКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ПрикрепленныеФайлы1НомерСтрокиРасширеннаяПодсказка" id="96"/>
+								</LabelField>
+								<InputField name="ПрикрепленныеФайлы1ИмяФайла" id="97">
+									<DataPath>Объект.ПрикрепленныеФайлы.ИмяФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрикрепленныеФайлы1ИмяФайлаКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ПрикрепленныеФайлы1ИмяФайлаРасширеннаяПодсказка" id="99"/>
+								</InputField>
+								<InputField name="ПрикрепленныеФайлы1ПутьКФайлу" id="100">
+									<DataPath>Объект.ПрикрепленныеФайлы.ПутьКФайлу</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрикрепленныеФайлы1ПутьКФайлуКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ПрикрепленныеФайлы1ПутьКФайлуРасширеннаяПодсказка" id="102"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Заявки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрикрепитьФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прикрепить файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прикрепить файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрикрепитьФайл</Action>
+		</Command>
+		<Command name="ОтправитьОтвет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить ответ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить ответ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьОтвет</Action>
+		</Command>
+		<Command name="ОткрытьФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФайл</Action>
+		</Command>
+	</Commands>
+</Form>
